@@ -4,22 +4,31 @@ package org.grnrt.epuml;
  * @author Marco Grunert <marco@grnrt.org>
  */
 public class Epuml {
-    private String padBaseUrl;
-    private String padName;
+    private String url;
+    private String name;
+    private String picUrl;
 
-    public String getPadBaseUrl() {
-        return padBaseUrl;
+    public String getUrl() {
+        return url;
     }
 
-    public void setPadBaseUrl(String padBaseUrl) {
-        this.padBaseUrl = padBaseUrl;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
-    public String getPadName() {
-        return padName;
+    public String getName() {
+        return name;
     }
 
-    public void setPadName(String padName) {
-        this.padName = padName;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPicUrl() {
+        return picUrl;
+    }
+
+    public void setPicUrl(String picUrl) {
+        this.picUrl = picUrl;
     }
 }

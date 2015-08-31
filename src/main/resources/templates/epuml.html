@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <title>AGES Pay Mock</title>
+    <title>epUML</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/css/bootstrap.min.css"
-          th:href="@{webjars/bootstrap/3.3.2/css/bootstrap.min.css}"
+
           rel="stylesheet" media="screen"/>
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/css/bootstrap.min.css"
-          th:href="@{webjars/bootstrap/3.3.2/js/bootstrap.min.js}"
+
           rel="stylesheet" media="screen"/>
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.1/jquery.min.js"
-            th:src="@{webjars/jquery/2.1.1/jquery.min.js}"></script>
+            ></script>
 </head>
 <body style="padding-top: 60px;">
 
@@ -25,8 +25,16 @@
 
 <div class="container">
 
-    <div class="jumbotron">
-        <h1>tbd</h1>
+
+    <div class="row">
+        <form th:action="@{epuml}" th:object="${epuml}" method="post">
+            <div class="col-lg-6">
+                <iframe th:src="*{url}" width="600" height="800"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <image th:src="*{picUrl}"/>
+            </div>
+        </form>
     </div>
 
 </div>
