@@ -7,6 +7,8 @@ public class Epuml {
     private String url;
     private String name;
     private String picUrl;
+    private String picTitle = "Click to refresh";
+    private String code;
 
     public String getUrl() {
         return url;
@@ -30,5 +32,21 @@ public class Epuml {
 
     public void setPicUrl(String picUrl) {
         this.picUrl = picUrl;
+    }
+
+    public String getPicTitle() {
+        return picTitle;
+    }
+
+    public void setPicTitle(String picTitle) {
+        this.picTitle = picTitle;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }
